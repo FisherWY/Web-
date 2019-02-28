@@ -1,0 +1,108 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+}
+
+/* 顶部导航栏整体设置 */
+.navBar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #41A2E3;
+}
+
+/* 顶部导航栏Item设置 */
+.navItem {
+	float: left;
+}
+
+/* 顶部导航栏Item的a标签设置 */
+.navItem_a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* 顶部导航栏鼠标移动到哪个项就变色 */
+.navItem_a:hover {
+	background-color: #257DB8;
+}
+
+/* 左侧导航栏整体设置 */
+.left_navBar {
+	list-style-type: none;
+	margin-top: 30px;
+	padding: 0;
+	width: 15%;
+	height: 75%;
+	background-color: #80D4F1;
+	position: fixed;
+	overflow: hidden;
+}
+
+/* 左侧导航栏li标签 */
+.left_navItem {
+	width: 100%;
+	display: block;
+	color: white;
+	padding: 8px 0px;
+	text-align: center;
+}
+
+/* 左侧导航栏li标签鼠标放上去的状态*/
+.left_navItem:hover {
+	background-color: #0C98C7;
+	color: white;
+}
+
+/* 导航栏tittle */
+.menu_tittle {
+	background-color: #43BEE7;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 10px;
+}
+
+/* 导航栏左侧小圆点 */
+.menu_dot {
+	width: 15px;
+	height: 15px;
+	float: left;
+	padding-top: 1.5%;
+	padding-left: 3%;
+}
+
+/* 导航栏右侧箭头 */
+.menu_arrow{
+	width: 15px;
+	height: 15px;
+	float: right;
+	padding-top: 1.5%;
+	padding-right: 3%;
+}
+
+/* 中间列表相对位置 */
+.center_list {
+	padding-left: 17%;
+	padding-top: 1%;
+}
+
+/* 中间列表表头图标 */
+.center_list_icon {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+/* 中间列表表头标题 */
+.center_list_tittle {
+	display: inline-block;
+	vertical-align: middle;
+}
