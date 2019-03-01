@@ -1,17 +1,30 @@
+/* 网页全局配置 */
 *{
-	margin: 0px;
-	padding: 0px;
+	margin: 0%;
+	padding: 0%;
 	text-decoration: none;
 	list-style: none;
+	color: #424242;
 }
 
 /* 顶部导航栏整体设置 */
 .navBar {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
+	margin: 0%;
+	padding: 0%;
 	overflow: hidden;
+	/*background-color: #41A2E3;*/
+}
+
+/* 顶部导航栏外部div */
+.navBarDiv0 {
 	background-color: #41A2E3;
+}
+
+/* 顶部导航栏内部div */
+.navBarDiv {
+	width: 50%;
+	margin: 0 auto;
 }
 
 /* 顶部导航栏Item设置 */
@@ -37,10 +50,10 @@
 /* 左侧导航栏整体设置 */
 .left_navBar {
 	list-style-type: none;
-	margin-top: 30px;
+	margin-top: 1.5%;
 	padding: 0;
 	width: 15%;
-	height: 75%;
+	height: 70%;
 	background-color: #80D4F1;
 	position: fixed;
 	overflow: hidden;
@@ -51,7 +64,7 @@
 	width: 100%;
 	display: block;
 	color: white;
-	padding: 8px 0px;
+	padding: 4.5% 0%;
 	text-align: center;
 }
 
@@ -61,15 +74,22 @@
 	color: white;
 }
 
-/* 导航栏tittle */
+/* 左侧导航栏tittle */
 .menu_tittle {
 	background-color: #43BEE7;
 	font-weight: bold;
 	text-align: left;
-	padding-left: 10px;
+	padding-left: 5%;
+	border-bottom-right-radius: 5rem;
+	/*color: white;*/
 }
 
-/* 导航栏左侧小圆点 */
+/* 左侧导航栏tittle颜色 */
+.menu_tittle .title{
+	color: white;
+}
+
+/* 左侧导航栏左侧小圆点 */
 .menu_dot {
 	width: 15px;
 	height: 15px;
@@ -78,7 +98,7 @@
 	padding-left: 3%;
 }
 
-/* 导航栏右侧箭头 */
+/* 左侧导航栏右侧箭头 */
 .menu_arrow{
 	width: 15px;
 	height: 15px;
@@ -96,8 +116,8 @@
 /* 中间列表表头图标 */
 .center_list_icon {
 	display: inline-block;
-	width: 50px;
-	height: 50px;
+	width: 5%;
+	height: 5%;
 	vertical-align: middle;
 }
 
@@ -105,4 +125,35 @@
 .center_list_tittle {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+/* 中间列表的具体项目 */
+.food_item {
+	width: 20%;
+	float: left;
+	padding-left: 2%;
+}
+
+/* 中间列表的项目标题 */
+.food_name {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+/* 中间列表的项目价格 */
+.food_price {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+
+/* 中间列表的项目已售出数量 */
+.food_number {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
 }
