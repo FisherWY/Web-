@@ -1,0 +1,333 @@
+/* 网页全局配置 */
+*{
+	margin: 0%;
+	padding: 0%;
+	text-decoration: none;
+	list-style: none;
+	color: #424242;
+}
+
+/* 顶部区 */
+.topTable {
+	width: 100%;
+	border: 0;
+}
+
+/* 顶部区内部table */
+.topTable_in {
+	width: 1200;
+	border: 0;
+}
+
+/* 顶部区收藏图标 */
+.top_star {
+	vertical-align: middle;
+	width: 6%;
+	height: 10%;
+}
+
+/* 顶部区箭头 */
+.top_arrow {
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+}
+
+/* 顶部区左侧对齐 */
+.top_left {
+	/*position: absolute;*/
+	left: 0px;
+	text-align: center;
+}
+
+/* 顶部区左侧div */
+.top_leftDiv {
+	display: inline-block;
+	margin-left: 5%;
+	left: 0%;
+}
+
+/* 顶部区右侧对齐 */
+.top_right {
+	width: 30%;
+	position: absolute;
+	text-align: center;
+	right: 0%;
+}
+
+/* 顶部区右侧div */
+.top_rightDiv {
+	display: inline-block;
+	margin-right: 5%;
+	right: 0%;
+}
+
+/* 顶部导航栏整体设置 */
+.navBar {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0%;
+	overflow: hidden;
+	/*background-color: #41A2E3;*/
+}
+
+/* 顶部导航栏外部div */
+.navBarDiv0 {
+	background-color: #41A2E3;
+}
+
+/* 顶部导航栏内部div */
+.navBarDiv {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+
+/* 顶部导航栏Item设置 */
+.navItem {
+	float: left;
+}
+
+/* 顶部导航栏Item的a标签设置 */
+.navItem_a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* 顶部导航栏鼠标移动到哪个项就变色 */
+.navItem_a:hover {
+	background-color: #257DB8;
+}
+
+.left_navBarDiv {
+	/*width: 15%;*/
+}
+
+/* 左侧导航栏整体设置 */
+.left_navBar {
+	width: 10%;
+	height: 50%;
+	list-style-type: none;
+	margin-top: 1.5%;
+	padding: 0;
+	background-color: #80D4F1;
+	position: fixed;
+	overflow: hidden;
+}
+
+/* 左侧导航栏li标签 */
+.left_navItem {
+	width: 100%;
+	display: block;
+	color: white;
+	padding: 4.5% 0%;
+	text-align: center;
+}
+
+/* 左侧导航栏li标签鼠标放上去的状态*/
+.left_navItem:hover {
+	background-color: #0C98C7;
+	color: white;
+}
+
+/* 左侧导航栏tittle */
+.menu_tittle {
+	background-color: #43BEE7;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 5%;
+	border-bottom-right-radius: 5rem;
+	/*color: white;*/
+}
+
+/* 左侧导航栏tittle颜色 */
+.menu_tittle .title{
+	color: white;
+}
+
+/* 左侧导航栏左侧小圆点 */
+.menu_dot {
+	width: 15px;
+	height: 15px;
+	float: left;
+	padding-top: 1.5%;
+	padding-left: 3%;
+}
+
+/* 左侧导航栏右侧箭头 */
+.menu_arrow{
+	width: 15px;
+	height: 15px;
+	float: right;
+	padding-top: 1.5%;
+	padding-right: 3%;
+}
+
+/* 中间推荐区相对位置 */
+.center_recommend {
+	width: 85%;
+	height: 70%;
+	padding-left: 15%;
+	padding-top: 1%;
+}
+
+/* 中间大图 */
+.center_mainImg {
+	width: 100%;
+	height: 100%;
+}
+
+/* 中间小图 */
+.center_otherImg {
+	width: 100%;
+	height: 100%;
+}
+
+/* 中间大图div */
+.center_ldiv {
+	width: 40%;
+	height: 100%;
+	display: inline-block;
+}
+
+/* 中间小图div */
+.center_rdiv {
+	width: 40%;
+	height: 100%;
+	display: inline-block;
+	margin-left: 5%;
+	/*vertical-align: middle;*/
+}
+
+/* 中间小图内部div */
+.center_rdiv_in {
+	width: 40%;
+	height: 50%;
+	display: inline-block;
+	padding-bottom: 5%;
+	padding-left: 5%;
+}
+
+/* 中间列表相对位置 */
+.center_list {
+	width: 85%;
+	height: 80%;
+	padding-left: 15%;
+	padding-top: 1%;
+}
+
+/* 中间列表表头图标 */
+.center_list_icon {
+	display: inline-block;
+	width: 5%;
+	height: 5%;
+	vertical-align: middle;
+}
+
+/* 中间列表表头标题 */
+.center_list_tittle {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*.food_list {
+	width: 85%;
+	height: 80%;
+}*/
+
+/* 中间列表的具体项目 */
+.food_item {
+	width: 20%;
+	float: left;
+	padding-left: 2%;
+}
+
+/* 中间列表的项目标题 */
+.food_name {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+/* 中间列表的项目价格 */
+.food_price {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+
+/* 中间列表的项目已售出数量 */
+.food_number {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+
+/* 中间列表图片div */
+.food_imgDiv {
+	padding-left: 20%;
+}
+
+/* 左下角猜你喜欢 */
+.left_recommend {
+	width: 10%;
+	height: 50%;
+	list-style-type: none;
+	/*margin-top: 1%;*/
+	padding: 0;
+	background-color: #80D4F1;
+	position: fixed;
+	/*overflow: hidden;*/
+}
+
+.left_recommend_tittle {
+	width: 100%;
+	display: block;
+	color: white;
+	padding: 4.5% 0%;
+	text-align: left;
+}
+
+.recommend_title {
+	color: white;
+	padding-left: 5%;
+}
+
+.left_recommend_tittle:hover {
+	background-color: #0C98C7;
+	color: white;
+}
+
+.left_recommend_more {
+	float: right;
+	text-align: right;
+	padding-right: 5%;
+}
+/* end 左下角猜你喜欢 */
+
+.button_list {
+	display: block;
+	width: 80%;
+	height: 30%;
+	padding-left: 15%;
+	padding-top: 1%;
+}
+
+.button_list_item {
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+
+}
+
+.button_list_img {
+	width: 100%;
+	height: 80%;
+}
