@@ -4,10 +4,13 @@
 	<meta charset="utf-8">
 	<title>餐饮列表页面-后台管理</title>
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-table.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/shoplist.css">
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/popper.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/bootstrap-table.min.js"></script>
+	<script src="./js/shoplist.js"></script>
 
 </head>
 <body>
@@ -62,10 +65,10 @@
 	<!-- end 操作栏 -->
 
 	<!-- 表格 -->
-	<table class="col-*-10 table table-bordered table-hover tableStyle">
+	<table id="shoplistTable" class="col-*-10 table table-bordered table-hover tableStyle">
 		<thead>
 			<tr class="text-center">
-				<th data-checkbox="true"><input type="checkbox" class="form-check-input">全选</th>
+				<th data-checkbox="true"><input type="checkbox" class="form-check-input" value="false"></th>
 				<th>缩略图</th>
 				<th>商品名称</th>
 				<th>商品类别</th>
