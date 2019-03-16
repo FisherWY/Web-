@@ -1,0 +1,59 @@
+body,html {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.top_frame {
+	/*display: block;*/
+	width: 100%;
+	height: 20%;
+	background-color: #D3D3D3;
+}
+
+.center_body {
+	/*display: block;*/
+	width: 100%;
+	height: 60%;
+	/*background-color: #00EE00;*/
+}
+
+.bottom_frame {
+	/*display: block;*/
+	width: 100%;
+	height: 20%;
+	background-color: #8B8B7A;
+}
+
+.center_left {
+	/*overflow: hidden;*/
+	width: 10%;
+	height: 100%;
+	/*background-color: #98F5FF;*/
+}
+
+.center_middle {
+	width: 79%;
+	height: 100%;
+	/*background-color: #CD3278;*/
+}
+
+.center_right {
+	/*overflow: hidden;*/
+	width: 10%;
+	height: 100%;
+	/*background-color: #0000CD;*/
+}
+
+.center_div {
+	vertical-align: top;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.center_iframe {
+	width: 100%;
+	height: 100%;
+}
+
