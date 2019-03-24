@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>添加商品页面-后台管理系统</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-table.min.css">
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</head>
+<body style="width: 100%; height: 100%">
+	<!-- 页面顶部导航栏 -->
+	<nav class="navbar navbar-expand-sm bg-light fixed-top">
+		<span class="nav-brand">位置：</span>
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link text-dark" href="#">首页</a>
+			</li>
+			<li class="nav-item">
+				<span class="nav-link">></span>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-dark" href="#">添加商品</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- 添加商品表单 -->
+	<div>
+		<form style="width: 90%; height: 90%; margin: 0 auto; padding-top: 5%;">
+			<div class="form-group">
+				<label for="img">商品缩略图 *</label>
+				<input type="file" name="img" id="img" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="name">商品名称 *</label>
+				<input type="text" name="name" id="name" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="selectMenu">商品类型 *</label>
+				<select class="form-control" id="selectMenu">
+					<option>男装</option>
+					<option>女装</option>
+					<option>童装</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="price">商品单价 *</label>
+				<input type="number" name="price" id="groupPirce" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="groupPirce">团购价 *</label>
+				<input type="number" name="groupPirce" id="groupPirce" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="count">商品数量 *</label>
+				<input type="number" name="count" id="count" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="date">发布日期 *</label>
+				<input type="text" name="date" id="date" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="selectMenu1">是否审核 *</label>
+				<select class="form-control" id="selectMenu1">
+					<option>已审核</option>
+					<option>未审核</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="description">商品描述 *</label>
+				<textarea class="form-control" rows="5" id="description"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">马上发布</button>
+		</form>
+	</div>
+</body>
+</html>
