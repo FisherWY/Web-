@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>实验六</title>
+</head>
+<body>
+	<div>
+		<fieldset>
+			<legend>鼠标经过的图像</legend>
+			<img id="img1" onmouseover="showBigger()" onmouseleave="showSmaller()" src="./img/dl1.jpg">
+		</fieldset>
+	</div>
+
+	<div>
+		<fieldset style="height: 200px;">
+			<legend>图片轮播</legend>
+			<img src="./img/love1.jpg" width="300" height="150" id="focusImg">
+			<ul class="focusBox">
+				<li onclick="showPic(1)"></li>
+				<li onclick="showPic(2)"></li>
+				<li onclick="showPic(3)"></li>
+				<li onclick="showPic(4)"></li>
+				<li onclick="showPic(5)"></li>
+			</ul>
+		</fieldset>
+	</div>
+
+</body>
+<script type="text/javascript">
+	var img1 = document.getElementById('img1')
+
+	function showBigger() {
+		img1.src = './img/dl1d.jpg'
+	}
+
+	function showSmaller() {
+		img1.src = './img/dl1.jpg'
+	}
+
+	var sign = 2;
+	function showPic(index)
+	{
+		var focusImg = document.getElementById("focusImg");
+		var imgSrc = "img/love";
+		imgSrc = imgSrc + index + ".jpg";
+		focusImg.src = imgSrc;
+		
+		var lis = document.getElementsByClassName("focusBox")[0].getElementsByTagName("li");
+		
+		for(var i = 0;i < lis.length;i++)
+		{
+			lis[i].className="";
+		}
+		lis[index-1].className = "cur";
+	}
+
+	function setCurrentPic()
+	{
+		showPic(sign);
+		sign++;
+		if(sign==6)
+		{
+			sign=1;
+		}
+	}
+
+	window.onload=function()
+	{
+		showPic(1);
+	}
+
+	window.setInterval("setCurrentPic()",1000);
+</script>
+<style type="text/css">
+	.focusBox
+	{
+		position: absolute;
+		margin-top: 5px;
+		width: 150px;
+		left: 50%;
+		margin-left: -560px;
+		list-style: none;
+	}
+	
+	.focusBox li
+	{
+		float: left;
+		margin-right: 10px;
+		width: 15px;
+		height: 15px;
+		border-radius: 10px;
+		background: gray;
+		cursor: pointer;
+	}
+	.focusBox li.cur
+	{
+		background: #f60;
+		opacity: 0.6;
+		filter: alpha(opacity=60);
+	}
+</style>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>表单</title>
+</head>
+<body>
+	<form>
+		<p>
+			<label>请输入您的邮箱地址: </label>
+			<input type="email" name="mymail">
+		</p>
+		<p>
+			<label>请输入一个网址: </label>
+			<input type="url" name="myurl">
+		</p>
+		<p>
+			<label>请输入数字: </label>
+			<input type="number" name="mynumber">
+		</p>
+		<p>
+			<label>数字滑动条: </label>
+			<input id="formrange" type="range" name="myrange" min="0" max="255" value="0" onchange="changeSpan(value)">
+			<span id="formrangespan">0</span>
+		</p>
+		<p>
+			<label>请选择日期: </label>
+			<input type="date" name="mydate" id="formdate">
+		</p>
+		<p>
+			<label>请选择颜色: </label>
+			<input type="color" name="mycolor" id="formcolor">
+		</p>
+		<p>
+			<label>请选择招式: </label>
+			<select>
+				<option>亢龙有悔</option>
+				<option>飞龙在天</option>
+				<option>见龙在田</option>
+				<option>神龙摆尾</option>
+			</select>
+		</p>
+		<p>
+			<button type="submit">提交</button>
+		</p>
+	</form>
+</body>
+<script type="text/javascript">
+	function changeSpan(value) {
+		document.getElementById("formrangespan").innerText = value;
+	}
+</script>
+</html>
