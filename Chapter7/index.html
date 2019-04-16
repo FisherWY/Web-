@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>实验八</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var title = new Array("电影类型","电影名称","价格","操作");
+		var movies = [["动作片","导火索",50],
+					  ["科幻片","2012",70],
+					  ["战争片","我是战士",60]];
+
+		// 表格头部
+		document.write("<table border='1'>");
+		// 表头
+		document.write("<thead>");
+		// 表头标题
+		document.write("<th><input type='checkbox' onclick='SelectAll(this)' id='SelectNo'>全选</th>");
+		for (var i = 0; i < title.length; i++) {
+			document.write("<th>"+title[i]+"</th>");
+		}
+		// 表头结束
+		document.write("</thead>");
+		// 表体
+		document.write("<tbody>");
+		// 表体内容
+		for (var i = 0; i < movies.length; i++) {
+			document.write("<tr>");
+			document.write("<td><input type='checkbox' onclick='Select()' id='SelectNo"+i+"'>选择</td>");
+			for (var j = 0; j < movies[i].length; j++) {
+				document.write("<td>"+movies[i][j]+"</td>");
+			}
+			document.write("<td><a href='#' onclick='Operate()'>修改</a><a href='#' onclick='Operate()'>删除</a></td>");
+			document.write("</tr>");
+		}
+		// 表体结束
+		document.write("</tbody>");
+		// 表格尾部
+		document.write("</table>");
+
+		// 全选按钮
+		function SelectAll(x) {
+			for (var i = 0; i < movies.length; i++) {
+				var input = document.getElementById('SelectNo'+i);
+				input.checked = x.checked;
+			}
+		}
+
+		// 单选按钮
+		function Select() {
+			var thead = document.getElementById('SelectNo');
+			for (var i = 0; i < movies.length; i++) {
+				var input = document.getElementById('SelectNo'+i);
+				if (input.checked == false) {
+					thead.checked = false;
+					return;
+				}
+			}
+			thead.checked = true;
+		}
+
+		// 操作按钮
+		function Operate() {
+			alert('这是操作按钮');
+		}
+	</script>
+</body>
+</html>
