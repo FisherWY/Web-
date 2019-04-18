@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>数据接收</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 获得当前url的传参
+		var url = window.location.search;
+		// 将参数解析
+		var args = url.substring(1, url.length).split("&");
+		
+
+		/**
+		 * 生成表格
+		 */
+		var title = new Array("Username","Email","Sex","Age");
+
+		// 表格头部
+		document.write("<table border='1'>");
+		// 表头
+		document.write("<thead>");
+		// 表头标题
+		for (var i = 0; i < title.length; i++) {
+			document.write("<th>"+title[i]+"</th>");
+		}
+		// 表头结束
+		document.write("</thead>");
+		// 表体
+		document.write("<tbody>");
+		// 表体内容
+		document.write("<tr>");
+		for (var i = 0; i < args.length; i++) {
+			// 对url进行解码
+			var str = decodeURIComponent(args[i].split("=")[1]);
+			document.write("<td>" + str + "</td>");
+		}
+		document.write("</tr>");
+
+		// 表体结束
+		document.write("</tbody>");
+		// 表格尾部
+		document.write("</table>");
+	</script>
+
+</body>
+</html>
