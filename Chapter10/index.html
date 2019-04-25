@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>实验八</title>
+</head>
+<body>
+    <table border="1" id="table0">
+        <thead>
+            <th><input type='checkbox' onclick='SelectAll(this)' id='SelectNo'>全选</th>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>操作</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <div id="form0">
+        <p>
+            <label>请输入学号: </label>
+            <input type="number" id="no">
+        </p>
+        <p>
+            <label>请输入姓名: </label>
+            <input type="text" id="name">
+        </p>
+        <p>
+            <label>请选择性别: </label>
+            <input type="radio" name="sex" id="sex0" value="男">男
+            <input type="radio" name="sex" id="sex1" value="女">女
+        </p>
+        <p>
+            <label>请输入年龄: </label>
+            <input type="number" id="age">
+        </p>
+        <p>
+            <button onclick="AddData()">添加</button>
+            <button onclick="clearData()">重置</button>
+        </p>
+    </div>
+    <script type="text/javascript">
+
+		// 全选按钮
+		function SelectAll(x) {
+            var table = document.getElementById('table0');
+            var tableRows = table.rows;
+			for (var i = 1; i < tableRows.length; i++) {
+                var data = tableRows[i].cells;
+				data[0].childNodes[0].checked = x.checked;
+			}
+		}
+
+		// 单选按钮
+		function Select() {
+			var thead = document.getElementById('SelectNo');
+            var table = document.getElementById('table0');
+            var tableRows = table.rows;
+			for (var i = 1; i < tableRows.length; i++) {
+                var data = tableRows[i].cells;
+				if (data[0].childNodes[0].checked == false) {
+					thead.checked = false;
+					return;
+				}
+			}
+			thead.checked = true;
+		}
+
+		// 操作按钮
+		function Edit(btn) {
+            var table = document.getElementById('table0');
+            var tableRows = table.rows;
+            var index = btn.parentNode.parentNode.rowIndex;
+            var data = tableRows[index].cells;
+            data[1].innerHTML = "<input id='editno"+index+"' type='number' value='"+data[1].innerHTML+"'>";
+            data[2].innerHTML = "<input id='editname"+index+"' type='text' value='"+data[2].innerHTML+"'>";
+            if (data[3].innerHTML == "男") {
+                data[3].innerHTML = "<input id='editsex"+index+"' type='radio' name='sex"+index+"' value='男' checked>男<input type='radio' name='sex"+index+"' value='女'>女";
+            } else {
+                data[3].innerHTML = "<input id='editsex"+index+"' type='radio' name='sex"+index+"' value='男'>男<input type='radio' name='sex"+index+"' value='女' checked>女";
+            }
+            data[4].innerHTML = "<input id='editage"+index+"' type='number' value='"+data[4].innerHTML+"'>";
+            data[5].innerHTML = "<button onclick='Save(this)'>保存</button>"
+        }
+
+        // 删除按钮
+        function Delete(btn) {
+            var table = document.getElementById('table0');
+            table.deleteRow(btn.parentNode.parentNode.rowIndex);
+        }
+        
+        // 添加数据
+        function AddData() {
+            if (!authData()) {
+                alert('表单数据未通过验证');
+                return;
+            }
+
+            var table = document.getElementById('table0');
+            var row = table.insertRow(table.rows.length);
+
+            var select = row.insertCell();
+            var no = row.insertCell();
+            var name = row.insertCell();
+            var sex = row.insertCell();
+            var age = row.insertCell();
+            var operate = row.insertCell();
+
+            select.innerHTML = "<input type='checkbox' onclick='Select(this)' id='SelectNo'>选择";
+            no.innerHTML = document.getElementById('no').value;
+            name.innerHTML = document.getElementById('name').value;
+            sex.innerHTML = getRadio();
+            age.innerHTML = document.getElementById('age').value;
+            operate.innerHTML = "<button onclick='Edit(this)'>修改</button><button onclick='Delete(this)'>删除</button>";
+
+            clearData();
+		}
+
+        // 对表单的非空验证
+        function authData() {
+            if (document.getElementById('no').value == null) {
+                return false;
+            }
+            if (document.getElementById('name').value == null) {
+                return false;
+            }
+            if (document.getElementById('age').value <= 0) {
+                return false;
+            }
+            if (getRadio() == "未知") {
+                return false;
+            }
+            return true;
+        }
+
+        // 修改数据保存按钮
+        function Save(btn) {
+            var table = document.getElementById('table0');
+            var tableRows = table.rows;
+            var index = btn.parentNode.parentNode.rowIndex;
+            var data = tableRows[index].cells;
+            data[1].innerHTML = document.getElementById('editno'+index).value;
+            data[2].innerHTML = document.getElementById('editname'+index).value;
+            if (document.getElementById('editsex'+index).checked == true) {
+                data[3].innerHTML = "男";
+            } else {
+                data[3].innerHTML = "女";
+            }
+            data[4].innerHTML = document.getElementById('editage'+index).value;
+            data[5].innerHTML = "<button onclick='Edit(this)'>修改</button><button onclick='Delete(this)'>删除</button>";
+        }
+
+        // 清空表单
+        function clearData() {
+            document.getElementById('no').value = null;
+            document.getElementById('name').value = null;
+            // document.getElementById('sex').value = "";
+            resetRadio();
+            document.getElementById('age').value = null;
+        }
+
+        // 对radio的值的获取
+        function getRadio() {
+            if (document.getElementById('sex0').checked == true) {
+                return "男";
+            }
+            if (document.getElementById('sex1').checked == true) {
+                return "女";
+            }
+            return "未知";
+        }
+
+        // 对radio值的设置
+        function setRadio(value) {
+            if (value == "男") {
+                document.getElementById('sex0').checked = true;
+                document.getElementById('sex1').checked = false;
+            } else if (value == "女") {
+                document.getElementById('sex0').checked = false;
+                document.getElementById('sex1').checked = true;
+            } else {
+                document.getElementById('sex0').checked = false;
+                document.getElementById('sex1').checked = false;
+            }
+        }
+
+        // 对radio的重置
+        function resetRadio() {
+            document.getElementById('sex0').checked = false;
+            document.getElementById('sex1').checked = false;
+        }
+        
+	</script>
+</body>
+</html>
