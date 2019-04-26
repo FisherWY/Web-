@@ -1,0 +1,29 @@
+.outer-div {
+    width: 1000px;
+    height: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+
+.inner-div {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+}
+
+.pic-div {
+    width: 100%;
+    height: 90%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.img-style {
+    width: 30%;
+    height: 50%;
+}
