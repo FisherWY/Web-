@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="./img/spurslogo.png">
+    <title>银黑部落</title>
+    <!-- css文件加载 -->
+    <link rel="stylesheet" href="./css/bootstrapcss/bootstrap.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/index.css"> 
+    <!-- js文件加载 -->
+    <script src="./js/jquery/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap/bootstrap.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <!-- 页面顶部导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <!-- 旧bootstrap导航栏 -->
+        <img class="navbar-brand text-white font-weight-bold playoffslogoStyle" src="./img/playoffslogo.png"></img>
+        <a class="nav-link text-white font-weight-bold" href="#">银黑新闻</a>
+        <a class="nav-link text-white font-weight-bold" href="#">银黑团队</a>
+        <a class="nav-link text-white font-weight-bold" href="#">银黑战况</a>
+        <a class="nav-link text-white font-weight-bold" href="#">银黑俱乐部</a>
+        <a class="nav-link text-white font-weight-bold ml-auto" href="#">我</a>
+        <button class="btn btn-danger font-weight-bold">退出</button>
+    </nav>
+    <!-- end 页面顶部导航栏 -->
+
+    <!-- 最新战况 -->
+    <div class="row latestgameStyle">
+        <!-- 比分板 -->
+        <div class="col-3 gameinfoStyle">
+            <div class="gameinfoPanelStyle">
+                <img src="./img/SAS.png" class="gamescoreStyle gamescoreImgStyle">
+                <div class="gamescoreStyle font-weight-bold">100</div>
+                <div class="gamescoreStyle pk font-italic">vs</div>
+                <div class="gamescoreStyle font-weight-bold">100</div>
+                <img src="./img/DEN.png" class="gamescoreStyle gamescoreImgStyle">
+            </div>
+        </div>
+        <!-- 球队得分板 -->
+        <div class="col-4 gameinfoStyle">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="text-center font-weight-bold">记分板</th>
+                        <th class="text-center font-weight-bold">1</th>
+                        <th class="text-center font-weight-bold">2</th>
+                        <th class="text-center font-weight-bold">3</th>
+                        <th class="text-center font-weight-bold">4</th>   
+                        <th class="text-center font-weight-bold">总得分</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center"><strong>SAS</strong></td>
+                        <td class="text-center font-weight-light">25</td>
+                        <td class="text-center font-weight-light">25</td>
+                        <td class="text-center font-weight-light">25</td>
+                        <td class="text-center font-weight-light">25</td>
+                        <td class="text-center font-weight-bold">100</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center"><strong>DEN</strong></td>
+                        <td class="text-center font-weight-light">25</td>
+                        <td class="text-center font-weight-light">25</td>
+                        <td class="text-center font-weight-light">25</td>
+                        <td class="text-center font-weight-light">25</td>
+                        <td class="text-center font-weight-bold">100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 球员得分榜 -->
+        <div class="col-5 gameinfoStyle">
+            <div class="playerleaderStyle">
+                <p class="playerleaderFontStyle">得分王</p>
+                <img src="./img/TimDuncan.png" class="playerleaderImgStyle">
+                <h5 class="leadernameStyle">Tim Duncan</h5>
+            </div>
+            <div class="playerleaderStyle">
+                <p class="playerleaderFontStyle">篮板王</p>
+                <img src="./img/ManuGinobili.png" class="playerleaderImgStyle">
+                <h5 class="leadernameStyle">Manu Ginobili</h5>
+            </div>
+            <div class="playerleaderStyle">
+                <p class="playerleaderFontStyle">助攻王</p>
+                <img src="./img/TonyParker.png" class="playerleaderImgStyle">
+                <h5 class="leadernameStyle">Tony Parker</h5>
+            </div>
+        </div>
+    </div>
+    <!-- end 最新战况 -->
+
+    <!-- 最新新闻 -->
+    <div class="row newsheadStyle">
+        <h3 class="newsheadtitleStyle">银黑今日</h3>
+    </div>
+    <div class="row newscontentStyle">
+        <div class="topnewsStyle">
+            <div class="col-*-4 newsdetailStyle">
+                <img src="./img/news1.jpg" class="newsdetailImgStyle">
+                <h3 class="newsdetailTitleStyle">Go Spurs Go</h3>
+                <div class="newsdetailTextStyle">Coach Pop addresses the media as the 2018-19 season comes to a close.</div>
+            </div>
+            <div class="col-*-4 newsdetailStyle">
+                <img src="./img/news1.jpg" class="newsdetailImgStyle">
+                <h3 class="newsdetailTitleStyle">Go Spurs Go</h3>
+                <div class="newsdetailTextStyle">Coach Pop addresses the media as the 2018-19 season comes to a close.</div>
+            </div>
+        </div>
+        <div class="normalnewsStyle">
+            
+        </div>
+    </div>
+    <!-- end最新新闻 -->
+
+    <!-- 页脚 -->
+    <footer role="row footer" class="footer">
+        <div class="col-3 footerleftStyle">
+            <img class="footerleftImgStyle" src="./img/SASfooter.jpg">
+        </div>
+        <div class="col-8 footerrightStyle">
+            <img class="footerrightImgStyle" src="./img/spursfooter1.jpg">
+            <img class="footerrightImgStyle" src="./img/spursfooter2.jpg">
+            <img class="footerrightImgStyle" src="./img/spursfooter3.jpg">
+            <img class="footerrightImgStyle" src="./img/spursfooter4.jpg">
+            <img class="footerrightImgStyle" src="./img/spursfooter5.png">
+            <img class="footerrightImgStyle" src="./img/spursfooter6.jpg">
+        </div>
+        <div class="row footerbuttomStyle">
+            <p class="footerbuttomtextStyle">Copyright © 2019 NBA Media Ventures, LLC. All rights reserved.</p>
+            <p class="footerbuttomtextStyle">No portion of NBA.com may be duplicated, redistributed or manipulated in any form.</p>
+        </div>
+    </footer>
+    <!-- end页脚 -->
+</body>
+</html>

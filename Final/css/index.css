@@ -1,0 +1,161 @@
+/* navBar logo 大小 */
+.playoffslogoStyle {
+	width: 120px;
+	height: 40px;
+}
+
+/* 最新赛况一栏 */
+.latestgameStyle {
+/*	display: inline-block;
+	background-color: #fff;*/
+	margin-top: 70px;
+}
+
+/* 比分板，球队得分板，球员得分榜 */
+.gameinfoStyle {
+	display: inline-block;
+}
+
+/* 比分板样式 */
+.gameinfoPanelStyle {
+	margin-top: 10%;
+	text-align: center;
+}
+
+/* 具体比分，球队logo样式 */
+.gamescoreStyle {
+	display: inline-block;
+}
+
+/* vs字体样式 */
+.pk {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* 比赛球队logo样式 */
+.gamescoreImgStyle {
+	margin-left: 1%;
+	margin-right: 1%;
+	width: 80px;
+	height: 80px;
+}
+
+/* 球员榜样式 */
+.playerleaderStyle {
+	margin-left: 1%;
+	display: inline-block;
+}
+
+/* 球员榜球员名字 */
+.leadernameStyle {
+	margin-top: 1.5%;
+	text-align: center;
+}
+
+/* 球员榜球员图片 */
+.playerleaderImgStyle {
+	width: 150px;
+	height: 100px;
+}
+
+/* 球员榜p标签样式 */
+.playerleaderFontStyle {
+	margin-bottom: -1.5%;
+	font-size: 50%;
+	text-align: center;
+}
+
+/* Latest News 字体 */
+.newsheadStyle {
+	background-color: #F0F0F0;
+	height: 100px;
+}
+
+/* Latest News 字体样式 */
+.newsheadtitleStyle {
+	margin: 0 auto;
+	text-align: center;
+	color: #666;
+	padding-top: 30px;
+	font-size: 36px;
+	letter-spacing: 10px;
+	vertical-align: middle;
+}
+
+/* 新闻容器 */
+.newscontentStyle {
+/*	border: solid;
+	border-color: #F0F0F0;
+	border-width: 1px;*/
+}
+
+/* 头条新闻容器 */
+.topnewsStyle {
+	margin: 0 auto;
+}
+
+/* 单个新闻容器 */
+.newsdetailStyle {
+	display: inline-block;
+	border: solid;
+	border-color: #F0F0F0;
+	border-width: 2px;
+}
+
+/* 新闻图片 */
+.newsdetailImgStyle {
+	width: 600px;
+	height: 400px;
+}
+
+/* 新闻主题 */
+.newsdetailTitleStyle {
+	text-align: center;
+	border-bottom: solid;
+	border-color: #F0F0F0;
+	border-width: 1px;
+}
+
+/* 新闻摘要 */
+.newsdetailTextStyle {
+	width: 100%;
+	height: 50%;
+	text-align: center;
+}
+
+/* 页脚 */
+.footer {
+	height: 100px;
+/*	background-color: #F0F0F0;*/
+}
+
+/* 页脚左侧 */
+.footerleftStyle {
+	/*height: 100%;*/
+	display: inline-block;
+	margin-left: 5%;
+	margin-top: 2.5%;
+	border-right: solid;
+	border-color: #000000;
+	border-width: 1px;
+}
+
+/* 页脚右侧 */
+.footerrightStyle {
+/*	height: 100%;*/
+	display: inline-block;
+}
+
+.footerleftImgStyle {
+	display: inline-block;
+}
+
+.footerrightImgStyle {
+	margin-left: 5%;
+	display: inline-block;
+}
+
+.footerbuttomtextStyle {
+	text-align: center;
+}
