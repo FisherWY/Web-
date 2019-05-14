@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>注册</title>
+	<script type="text/javascript" src="./js/register.js"></script>
+</head>
+<body>
+<table>
+	<tr>
+		<td>新用户注册</td>
+	</tr>
+	<tr>
+		<td>用户名</td>
+		<td><input type="text" name="username" id="user" placeholder="请输入用户名"></td>
+	</tr>
+	<tr>
+		<td>密码</td>
+		<td><input type="password" name="psw" id="password" placeholder="请输入密码"></td>
+	</tr>
+	<tr>
+		<td>性别</td>
+		<td>
+            <input type="radio" name="sex" id="sex0" value="男">男
+            <input type="radio" name="sex" id="sex1" value="女">女
+		</td>
+	</tr>
+	<tr>
+		<td>年龄</td>
+		<td><input type="number" name="age0" id="age" placeholder="请输入年龄"></td>
+	</tr>
+	<tr>
+		<td>专业</td>
+		<td>
+			<select id="professer">
+				<option value="SE">软件工程</option>
+				<option value="CS">计算机科学</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td><button onclick="regist()">注册</button></td>
+	</tr>
+</table>
+
+</body>
+</html>

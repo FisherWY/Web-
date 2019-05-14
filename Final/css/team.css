@@ -1,0 +1,135 @@
+/* navBar logo 大小 */
+.playoffslogoStyle {
+	width: 120px;
+	height: 40px;
+}
+
+/* 球员详情容器 */
+.container {
+	/*background-color: #F0F0F0;*/
+}
+
+/* 中部球员信息表 */
+.playersdata {
+	/*background-color: #F0F0F0;*/
+}
+
+.playertd {
+	/*margin: 0 auto;*/
+}
+
+/* 球员容器 */
+.playerBox{
+	width: 302px;
+	height: 292px;
+	margin-left: 25px;
+	margin-right: 25px;
+	/*margin: 0 auto;*/
+	border:1px solid block;
+	float: left;
+}
+
+/* 球员名字，位置，号码信息容器 */
+.playerInfo{
+	overflow: hidden;
+}
+
+/* 球员名字 */
+.playerName{
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* 球员位置 */
+.playerPosition{
+	display: block;
+	font-size: 14px;
+	color: grey;
+}
+
+/* 球员名字，位置 Div */
+.player-l{
+	float: left;
+}
+
+/* 球员号码 Div */
+.player-r{
+	float: right;
+	font-size: 30px;
+	margin-right: 15px;
+	font-weight: bold;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 45px;
+}
+
+/* 头部宣传画Div */
+.headerImg {
+	margin-top: 5%;
+	background-color: #F0F0F0;
+}
+
+/* 头部宣传画Img标签 */
+.headerImgTag {
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+	height: 100px;
+}
+
+/* 页脚 */
+.footer {
+	margin-top: 5%;
+	height: 100px;
+	border-top: solid;
+	border-color: #F0F0F0;
+	border-width: 1px;
+	/*background-color: #474747;*/
+}
+
+/* 页脚左侧 */
+.footerleftStyle {
+	/*height: 100%;*/
+	display: inline-block;
+	margin-left: 5%;
+	margin-top: 2.5%;
+	border-right: solid;
+	border-color: #000000;
+	border-width: 1px;
+}
+
+/* 页脚右侧 */
+.footerrightStyle {
+/*	height: 100%;*/
+	display: inline-block;
+	/*background-color: #474747;*/
+}
+
+/* 页脚左侧图片 */
+.footerleftImgStyle {
+	display: inline-block;
+}
+
+/* 页脚右侧图片 */
+.footerrightImgStyle {
+	margin-left: 5%;
+	display: inline-block;
+}
+
+/* 页脚底部div */
+.footerbuttomStyle {
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #474747;
+	/*margin: 0 auto;*/
+}
+
+/* 页脚底部文字 */
+.footerbuttomtextStyle {
+	/*margin-left: 50px;*/
+	margin-top: 2%;
+	text-align: center;
+}
