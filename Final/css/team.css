@@ -78,6 +78,43 @@
 	height: 100px;
 }
 
+/* 教练信息容器 */
+.coachBox {
+	margin-top: 10px;
+	display: inline-block;
+	width: 800px;
+	height: 400px;
+}
+
+/* 教练信息列容器 */
+.coachBox-col {
+	display: inline-block;
+	width: 250px;
+	height: 400px;
+	vertical-align: top;
+}
+
+/* 教练字体 */
+.coach-name-font {
+	margin-top: 5px;
+	font-weight: 600;
+	color: #00295F;
+	font-size: 1.6rem;
+}
+
+/* 教练大学 */
+.coach-collage-font {
+	font-size: 1.2rem;
+}
+
+/* 教练列容器标题字体 */
+.coachBox-title {
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin: 0 auto;
+	font-family: 'Open Sans Condensed',sans-serif;
+}
+
 /* 页脚 */
 .footer {
 	margin-top: 5%;
@@ -130,6 +167,8 @@
 /* 页脚底部文字 */
 .footerbuttomtextStyle {
 	/*margin-left: 50px;*/
+	color: #ffffff;
 	margin-top: 2%;
+	margin-bottom: 2%;
 	text-align: center;
 }

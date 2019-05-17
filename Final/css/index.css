@@ -201,12 +201,15 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #474747;
 	/*margin: 0 auto;*/
 }
 
 /* 页脚底部文字 */
 .footerbuttomtextStyle {
 	/*margin-left: 50px;*/
+	color: #ffffff;
 	margin-top: 2%;
+	margin-bottom: 2%;
 	text-align: center;
 }
