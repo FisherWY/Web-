@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>发布论文</title>
+	<link rel="stylesheet" type="text/css" href="./css/release.css">
+	<script type="text/javascript" src="./js/release.js"></script>
+</head>
+<body>
+	<div class="release-title">
+		<span class="release-title-text">发布论文</span>
+	</div>
+	<table class="release-table">
+		<tbody>
+			<tr class="release-table-row1">
+				<td class="release-table-row-title">论文题目</td>
+				<td><input class="release-paper-title" type="text" name="papertitle" id="paper-title" placeholder="论文题目请控制在50个汉字以内"></td>
+			</tr>
+			<tr class="release-table-row2">
+				<td class="release-table-row-title">论文内容</td>
+				<td><textarea class="release-paper-text" id="paper-text" placeholder="请输入论文的主要研究内容及要求"></textarea></td>
+			</tr>
+			<tr class="release-table-row3">
+				<td class="release-table-row-title">论文性质</td>
+				<td>
+					<input type="text" name="paper-type-value" id="paper-type" style="display: none;">
+					<input class="release-paper-radio" type="radio" name="paper-type-radio" onclick="changeType(0)">软件开发
+					<input class="release-paper-radio" type="radio" name="paper-type-radio" onclick="changeType(1)">结合科研
+					<input class="release-paper-radio" type="radio" name="paper-type-radio" onclick="changeType(2)">工程设计
+					<input class="release-paper-radio" type="radio" name="paper-type-radio" onclick="changeType(3)">科学实验
+				</td>
+			</tr>
+			<tr class="release-table-row4">
+				<td class="release-table-row-title">限选人数</td>
+				<td><input class="release-paper-number" type="number" name="papernum" id="paper-number"></td>
+			</tr>
+			<tr class="release-table-row5">
+				<td class="release-table-row-title">操作</td>
+				<td>
+					<button class="release-paper-button" onclick="submit()">提交</button>
+					<button class="release-paper-button" onclick="reset()">重置</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
