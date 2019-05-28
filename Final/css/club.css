@@ -1,0 +1,110 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+
+ul {
+	list-style: disc;
+}
+
+li {
+	list-style: disc;
+}
+
+/* navBar logo 大小 */
+.playoffslogoStyle {
+	width: 120px;
+	height: 40px;
+}
+
+.fanclub-header-img {
+	width: 1280px;
+	margin-top: 5%;
+}
+
+.fanclub {
+	border: 1px solid #F0F0F0;
+}
+
+.fanclub-left {
+	display: inline-block;
+}
+
+.fanclub-left-up {
+	background-color: #F0F0F0;
+	padding: 1em 3em;
+}
+
+.fanclub-left-down {
+	background-color: #CFCFCF;
+	/*padding: 1em 2em;*/
+}
+
+.fanclub-left-down-list {
+	/*vertical-align: middle;*/
+	padding: 6em 2em;
+}
+
+.fanclub-right {
+	display: inline-block;
+}
+
+/* 页脚 */
+.footer {
+	margin-top: 5%;
+	height: 100px;
+	border-top: solid;
+	border-color: #F0F0F0;
+	border-width: 1px;
+	/*background-color: #474747;*/
+}
+
+/* 页脚左侧 */
+.footerleftStyle {
+	/*height: 100%;*/
+	display: inline-block;
+	margin-left: 5%;
+	margin-top: 2.5%;
+	border-right: solid;
+	border-color: #000000;
+	border-width: 1px;
+}
+
+/* 页脚右侧 */
+.footerrightStyle {
+/*	height: 100%;*/
+	display: inline-block;
+	/*background-color: #474747;*/
+}
+
+/* 页脚左侧图片 */
+.footerleftImgStyle {
+	display: inline-block;
+}
+
+/* 页脚右侧图片 */
+.footerrightImgStyle {
+	margin-left: 5%;
+	display: inline-block;
+}
+
+/* 页脚底部div */
+.footerbuttomStyle {
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #474747;
+	/*margin: 0 auto;*/
+}
+
+/* 页脚底部文字 */
+.footerbuttomtextStyle {
+	/*margin-left: 50px;*/
+	color: #ffffff;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+}

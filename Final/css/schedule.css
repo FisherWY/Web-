@@ -109,6 +109,11 @@
 	vertical-align: middle;
 }
 
+.regular-season-list-item-up-lost {
+	color: red;
+	vertical-align: middle;
+}
+
 .regular-season-list-item-up-text {
 	display: block;
 	vertical-align: middle;
