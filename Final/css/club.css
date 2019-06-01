@@ -25,30 +25,44 @@ li {
 }
 
 .fanclub {
+	margin-top: 2%;
 	border: 1px solid #F0F0F0;
 }
 
 .fanclub-left {
+	width: 75%;
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .fanclub-left-up {
+	/*width: 97%;*/
 	background-color: #F0F0F0;
 	padding: 1em 3em;
 }
 
 .fanclub-left-down {
+	/*width: 98%;*/
 	background-color: #CFCFCF;
+	padding: 1em 3em;
 	/*padding: 1em 2em;*/
 }
 
+.fanclub-left-down-img {
+	display: inline-block;
+}
+
 .fanclub-left-down-list {
-	/*vertical-align: middle;*/
-	padding: 6em 2em;
+	display: inline-block;
+	vertical-align: middle;
+	/*padding: 6em 2em;*/
 }
 
 .fanclub-right {
+	width: 20%;
 	display: inline-block;
+	vertical-align: middle;
+	margin-left: 2.5%;
 }
 
 /* 页脚 */

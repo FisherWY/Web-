@@ -31,7 +31,7 @@
     <!-- end 顶部粉丝部落图片 -->
 
     <!-- 中部粉丝部落 -->
-    <div class="col-*12 fanclub">
+    <div class="col-*-12 fanclub">
         <div class="fanclub-left">
             <div class="fanclub-left-up">
                 <h1>Join the San Antonio Spurs Official Club!</h1>
@@ -45,8 +45,8 @@
                 </ul>
                 <h3>And the best part is, joining the Official Spurs Fan Club is FREE!</h3>
             </div>
-            <div class="fanclub-left-down row">
-                <div class="col-sm-4 col-xs-12">
+            <div class="fanclub-left-down">
+                <div class="col-sm-4 col-xs-12 fanclub-left-down-img">
                     <img src="./img/ff1.png" width="100%">
                 </div>
                 <div class="col-sm-7 col-xs-12 fanclub-left-down-list">
@@ -62,7 +62,40 @@
                 </div>
             </div>
         </div>
-        <div class="fanclub-right"></div>
+        <div class="fanclub-right">
+            <form>
+                <div class="form-group">
+                    <label for="First_Name">First name:</label>
+                    <input class="form-control" type="text" name="first_name" id="First_Name">
+                </div>
+                <div class="form-group">
+                    <label for="Last_Name">Last name:</label>
+                    <input class="form-control" type="text" name="last_name" id="Last_Name">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email Address:</label>
+                    <input class="form-control" type="email" name="email" id="Email">
+                </div>
+                <div class="form-group">
+                    <label for="Birthday">Birthday(MM/DD/YYYY):</label>
+                    <input class="form-control" type="date" name="birthday" id="Birthday">
+                </div>
+                <div class="form-group">
+                    <label for="Post_Code">Zip or Postal Code:</label>
+                    <input class="form-control" type="number" name="post_code" id="Post_Code">
+                </div>
+                <div class="form-group">
+                    <label>Sex:</label>
+                    <select class="form-control" id="Sex">
+                        <option>Man</option>
+                        <option>Woman</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" onclick="">Join</button>
+                </div>
+            </form>
+        </div>
     
     </div>
     <!-- end中部粉丝部落 -->
