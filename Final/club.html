@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="./img/spurslogo.png">
 	<title>银黑部落</title>
 	<!-- css文件加载 -->
     <link rel="stylesheet" href="./css/bootstrapcss/bootstrap.css"> 
@@ -19,8 +20,8 @@
         <a class="nav-link text-white font-weight-bold" href="./team.html">银黑团队</a>
         <a class="nav-link text-white font-weight-bold" href="./schedule.html">银黑战况</a>
         <a class="nav-link text-white font-weight-bold" href="./club.html">银黑俱乐部</a>
-        <a class="nav-link text-white font-weight-bold ml-auto" href="#">我</a>
-        <button class="btn btn-danger font-weight-bold">退出</button>
+        <a class="nav-link text-white font-weight-bold ml-auto" href="./me.html">我</a>
+        <button class="btn btn-danger font-weight-bold" onclick="exit()">退出</button>
     </nav>
     <!-- end 页面顶部导航栏 -->
 
@@ -77,7 +78,7 @@
                     <input class="form-control" type="email" name="email" id="Email">
                 </div>
                 <div class="form-group">
-                    <label for="Birthday">Birthday(MM/DD/YYYY):</label>
+                    <label for="Birthday">Birthday(YYYY/MM/DD):</label>
                     <input class="form-control" type="date" name="birthday" id="Birthday">
                 </div>
                 <div class="form-group">
@@ -92,7 +93,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary btn-block" onclick="">Join</button>
+                    <button type="button" class="btn btn-primary btn-block" onclick="subscribe()">Subscribe!</button>
                 </div>
             </form>
         </div>

@@ -1,0 +1,74 @@
+/* navBar logo 大小 */
+.playoffslogoStyle {
+	width: 120px;
+	height: 40px;
+}
+
+.news-detail {
+	margin-top: 5%;
+}
+
+.news-img {
+	display: block;
+	margin: 0 auto;
+	width: 700px;
+	height: 450px;
+}
+
+.news-title {
+	margin-top: 2%;
+}
+
+/* 页脚 */
+.footer {
+	margin-top: 5%;
+	height: 100px;
+/*	background-color: #F0F0F0;*/
+}
+
+/* 页脚左侧 */
+.footerleftStyle {
+	/*height: 100%;*/
+	display: inline-block;
+	margin-left: 5%;
+	margin-top: 2.5%;
+	border-right: solid;
+	border-color: #000000;
+	border-width: 1px;
+}
+
+/* 页脚右侧 */
+.footerrightStyle {
+/*	height: 100%;*/
+	display: inline-block;
+}
+
+/* 页脚左侧图片 */
+.footerleftImgStyle {
+	display: inline-block;
+}
+
+/* 页脚右侧图片 */
+.footerrightImgStyle {
+	margin-left: 5%;
+	display: inline-block;
+}
+
+/* 页脚底部div */
+.footerbuttomStyle {
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #474747;
+	/*margin: 0 auto;*/
+}
+
+/* 页脚底部文字 */
+.footerbuttomtextStyle {
+	/*margin-left: 50px;*/
+	color: #ffffff;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+}

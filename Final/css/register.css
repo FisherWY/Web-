@@ -1,0 +1,9 @@
+body {
+	background-image: url(../img/login_background.jpeg);
+	background-repeat: repeat;
+}
+
+.regist-panel {
+	margin: 0 auto;
+	margin-top: 20%;
+}

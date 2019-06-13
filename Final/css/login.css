@@ -1,0 +1,14 @@
+body {
+	background-image: url(../img/login_background.jpeg);
+	background-repeat: repeat;
+}
+
+.login-div {
+	display: block;
+	margin: 0 auto;
+	margin-top: 15%;
+}
+
+.register-button {
+	float: right;
+}
